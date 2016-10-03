@@ -1,0 +1,122 @@
+{
+	"conclusion_var_list": [
+		"position" 
+	],
+	"ruleset": [
+		{
+			"action": {
+				"name": "position",
+				"target": "conclusion",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "degree",
+					"value": "false" 
+				} 
+			],
+			"id": 10 
+		},
+		{
+			"action": {
+				"name": "qualify",
+				"target": "variable",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "degree",
+					"value": "false" 
+				} 
+			],
+			"id": 20 
+		},
+		{
+			"action": {
+				"name": "position",
+				"target": "conclusion",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "degree",
+					"value": "false" 
+				},
+				{
+					"name": "discovery",
+					"value": "false" 
+				} 
+			],
+			"id": 30 
+		},
+		{
+			"action": {
+				"name": "position",
+				"target": "conclusion",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "qualify",
+					"value": "false" 
+				},
+				{
+					"name": "average",
+					"value": "false" 
+				},
+				{
+					"name": "experience",
+					"value": "false" 
+				} 
+			],
+			"id": 40 
+		},
+		{
+			"action": {
+				"name": "position",
+				"target": "conclusion",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "qualify",
+					"value": "false" 
+				},
+				{
+					"name": "average",
+					"value": "false" 
+				},
+				{
+					"name": "experience",
+					"value": "false" 
+				} 
+			],
+			"id": 50 
+		},
+		{
+			"action": {
+				"name": "position",
+				"target": "conclusion",
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "qualify",
+					"value": "false" 
+				},
+				{
+					"name": "average",
+					"value": "false" 
+				} 
+			],
+			"id": 60 
+		} 
+	],
+	"variable_list": [
+		"average",
+		"degree",
+		"discovery",
+		"experience",
+		"qualify" 
+	] 
+} 

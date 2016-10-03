@@ -1,0 +1,32 @@
+{
+  "variable_list":["interest","dollar","fedint","fedmon"],
+  "conclusion_var_list":["stock"],
+  "ruleset":[
+    {
+      "id":10,
+      "and":[{"name":"interest","value":"fall"}],
+      "action":{"target":"conclusion","name":"stock","value":"rise"}
+    },
+    {
+      "id":20,
+      "and":[{"name":"interest","value":"rise"}],
+      "action":{"target":"conclusion","name":"stock","value":"fall"}
+    },
+    {
+      "id":30,
+      "and":[{"name":"dollar","value":"fall"}],
+      "action":{"target":"variable", "name":"interest","value":"rise"}
+    },
+    {
+      "id":40,
+      "and":[{"name":"dollar","value":"rise"}],
+      "action":{"target":"variable","name":"interest","value":"fall"}
+    },
+    {
+      "id":50,
+      "and":[{"name":"fedint","value":"fall"},
+            {"name":"fedmon","value":"add"}],
+      "action":{"target":"variable","name":"interest","value":"fall"}
+    }
+    ]    
+}
