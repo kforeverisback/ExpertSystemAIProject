@@ -135,15 +135,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BackwardChain.cpp" />
-    <ClCompile Include="ForwardChain.cpp" />
-    <ClCompile Include="InferenceEngine.h" />
+    <ClCompile Include="BackwardChain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ForwardChain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GUIWindow.cpp" />
+    <ClCompile Include="InferenceEngine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="InferenceEngine.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="jsonxx.cc" />
     <ClCompile Include="MainSource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BackwardChain.h" />
     <ClInclude Include="ForwardChain.h" />
+    <ClInclude Include="GUIWindow.h" />
     <ClInclude Include="jsonxx.h" />
     <ClInclude Include="kb_essentials.h" />
     <ClInclude Include="klog.h" />

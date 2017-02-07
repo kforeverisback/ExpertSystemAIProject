@@ -1,32 +1,360 @@
 {
-  "variable_list":["interest","dollar","fedint","fedmon"],
-  "conclusion_var_list":["stock"],
-  "ruleset":[
-    {
-      "id":10,
-      "and":[{"name":"interest","value":"fall"}],
-      "action":{"target":"conclusion","name":"stock","value":"rise"}
-    },
-    {
-      "id":20,
-      "and":[{"name":"interest","value":"rise"}],
-      "action":{"target":"conclusion","name":"stock","value":"fall"}
-    },
-    {
-      "id":30,
-      "and":[{"name":"dollar","value":"fall"}],
-      "action":{"target":"variable", "name":"interest","value":"rise"}
-    },
-    {
-      "id":40,
-      "and":[{"name":"dollar","value":"rise"}],
-      "action":{"target":"variable","name":"interest","value":"fall"}
-    },
-    {
-      "id":50,
-      "and":[{"name":"fedint","value":"fall"},
-            {"name":"fedmon","value":"add"}],
-      "action":{"target":"variable","name":"interest","value":"fall"}
-    }
-    ]    
-}
+	"conclusion_var_list": [
+		"antidote" 
+	],
+	"ruleset": [
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "none" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "no" 
+				} 
+			],
+			"id": 10 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "succimer" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "lead" 
+				} 
+			],
+			"id": 20 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "iv" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "conium" 
+				} 
+			],
+			"id": 30 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "iv calcium" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "fluoride" 
+				} 
+			],
+			"id": 40 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "hydroxocobalamin" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "cyanide" 
+				} 
+			],
+			"id": 50 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "open airway" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "chlorine" 
+				} 
+			],
+			"id": 60 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "jewel weed" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "poison_ivy" 
+				} 
+			],
+			"id": 70 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "rehydration" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "food" 
+				} 
+			],
+			"id": 80 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "protamine sulfate" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "heparin" 
+				} 
+			],
+			"id": 90 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "anticholinergic" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "extrapyramidal" 
+				} 
+			],
+			"id": 100 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "supplemental oxygen" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "hydrocarbons" 
+				} 
+			],
+			"id": 110 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "sulphate of zinc" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "antimony" 
+				} 
+			],
+			"id": 120 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "dimercaprol" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "mercury" 
+				} 
+			],
+			"id": 130 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "digibind" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "digoxin" 
+				} 
+			],
+			"id": 140 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "methylene blue" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "mothball" 
+				} 
+			],
+			"id": 150 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "dimercaprol" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "arsenic" 
+				} 
+			],
+			"id": 160 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "n-acetylcystene" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "acetaminophen" 
+				} 
+			],
+			"id": 170 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "clinical help" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "ricin" 
+				} 
+			],
+			"id": 180 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "antivenom" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "cobra" 
+				} 
+			],
+			"id": 190 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "iv deferoxamine" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "iron" 
+				} 
+			],
+			"id": 200 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "empty the stomach by lavage" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "antipyrine" 
+				} 
+			],
+			"id": 210 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "cleanse with soap" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "anticholinesterase" 
+				} 
+			],
+			"id": 220 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "decontamination" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "bloodroot" 
+				} 
+			],
+			"id": 230 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "sodium nitrate" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "hydrocyanide" 
+				} 
+			],
+			"id": 240 
+		},
+		{
+			"action": {
+				"name": "antidote",
+				"target": "conclusion",
+				"value": "penicillamine" 
+			},
+			"and": [
+				{
+					"name": "poison",
+					"value": "copper" 
+				} 
+			],
+			"id": 250 
+		} 
+	],
+	"variable_list": [
+		"poison" 
+	] 
+} 

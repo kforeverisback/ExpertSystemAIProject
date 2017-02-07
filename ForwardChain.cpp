@@ -81,6 +81,8 @@ void ForwardChain::set_variable(const char* name, const char* value)
 	vvl.set_value(value);
 }
 
+ForwardChain::ForwardChain() {}
+
 void ForwardChain::start_fc(const std::vector<variable>& vars)
 {
 	//Push Valid variables in the queue
@@ -95,7 +97,6 @@ void ForwardChain::start_fc(const std::vector<variable>& vars)
 			vip.second = true; //Instantiated
 		}
 	}
-
 	//Process Conclusion variables
 	while (_conclusion_var_q.size() != 0)
 	{
@@ -179,4 +180,5 @@ void ForwardChain::start_fc(const std::vector<variable>& vars)
 		//After clauses are processed for the specific variable remove the variable from queue
 		_conclusion_var_q.pop();
 	}
+
 }

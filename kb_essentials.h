@@ -91,3 +91,5 @@ public:
 
 	}
 };
+
+typedef void (*user_input_fn)(variable& v);

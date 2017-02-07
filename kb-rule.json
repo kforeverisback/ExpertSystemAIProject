@@ -1,14 +1,13 @@
 {
 	"conclusion_var_list": [
-		"diagnosis",
 		"poison" 
 	],
 	"ruleset": [
 		{
 			"action": {
 				"name": "diagnosis",
-				"target": "conclusion",
-				"value": "false" 
+				"target": "variable",
+				"value": "true" 
 			},
 			"and": [
 				{
@@ -16,27 +15,13 @@
 					"value": "false" 
 				} 
 			],
-			"id": 40 
-		},
-		{
-			"action": {
-				"name": "diagnosis",
-				"target": "conclusion",
-				"value": "true" 
-			},
-			"and": [
-				{
-					"name": "exposed",
-					"value": "true" 
-				} 
-			],
-			"id": 80 
+			"id": 10 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "lead" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -68,7 +53,7 @@
 					"value": "false" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -96,13 +81,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 120 
+			"id": 47 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "acetaminophen" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -146,13 +131,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 160 
+			"id": 84 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "anticholinesterase" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -184,7 +169,7 @@
 					"value": "true" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -204,13 +189,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 200 
+			"id": 121 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "fluoride" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -278,13 +263,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 240 
+			"id": 158 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "iron" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -316,7 +301,7 @@
 					"value": "false" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "true" 
 				},
 				{
@@ -344,13 +329,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 280 
+			"id": 195 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "arsenic" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -382,7 +367,7 @@
 					"value": "false" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -422,13 +407,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 320 
+			"id": 232 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "mercury" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -460,7 +445,7 @@
 					"value": "false" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -494,19 +479,15 @@
 				{
 					"name": "tremor",
 					"value": "true" 
-				},
-				{
-					"name": "cognitive",
-					"value": "true" 
 				} 
 			],
-			"id": 360 
+			"id": 269 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "death cap mushroom" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -538,7 +519,7 @@
 					"value": "true" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -576,19 +557,15 @@
 				{
 					"name": "tremor",
 					"value": "true" 
-				},
-				{
-					"name": "cardiac_problem",
-					"value": "true" 
 				} 
 			],
-			"id": 400 
+			"id": 306 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "cobra bite" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -620,7 +597,7 @@
 					"value": "true" 
 				},
 				{
-					"name": "fever",
+					"name": " fever",
 					"value": "false" 
 				},
 				{
@@ -669,16 +646,16 @@
 				},
 				{
 					"name": "bite",
-					"value": "true numbness" 
+					"value": "true" 
 				} 
 			],
-			"id": 440 
+			"id": 343 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "mothball " 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -760,19 +737,15 @@
 				{
 					"name": "bite",
 					"value": "false" 
-				},
-				{
-					"name": "eye_irritation",
-					"value": "true" 
 				} 
 			],
-			"id": 480 
+			"id": 380 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "poison ivy" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -872,13 +845,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 520 
+			"id": 417 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "ricin" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -978,13 +951,13 @@
 					"value": "false" 
 				} 
 			],
-			"id": 560 
+			"id": 454 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "conium" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1084,13 +1057,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 600 
+			"id": 491 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "copper" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1198,13 +1171,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 640 
+			"id": 528 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "antimony" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1324,13 +1297,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 680 
+			"id": 565 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "antipyrine" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1440,136 +1413,6 @@
 				{
 					"name": "depression",
 					"value": "true" 
-				},
-				{
-					"name": "purging",
-					"value": "false" 
-				},
-				{
-					"name": "kidney_damage",
-					"value": "false" 
-				},
-				{
-					"name": "tingling",
-					"value": "true" 
-				} 
-			],
-			"id": 720 
-		},
-		{
-			"action": {
-				"name": "poison",
-				"target": "conclusion",
-				"value": "bloodroot" 
-			},
-			"and": [
-				{
-					"name": "diagnosis",
-					"value": "true" 
-				},
-				{
-					"name": "nauseous",
-					"value": "true" 
-				},
-				{
-					"name": "vomited",
-					"value": "false" 
-				},
-				{
-					"name": "disoriented",
-					"value": "true" 
-				},
-				{
-					"name": "weakness",
-					"value": "false" 
-				},
-				{
-					"name": "headache",
-					"value": "false" 
-				},
-				{
-					"name": "sweat",
-					"value": "false" 
-				},
-				{
-					"name": "fever",
-					"value": "false" 
-				},
-				{
-					"name": "paleness",
-					"value": "false" 
-				},
-				{
-					"name": "lightheadedness",
-					"value": "false" 
-				},
-				{
-					"name": "stomach",
-					"value": "false" 
-				},
-				{
-					"name": "memory",
-					"value": "false" 
-				},
-				{
-					"name": "cold",
-					"value": "false" 
-				},
-				{
-					"name": "diarrhea",
-					"value": "true" 
-				},
-				{
-					"name": "dizziness",
-					"value": "false" 
-				},
-				{
-					"name": "blurred_vision",
-					"value": "false" 
-				},
-				{
-					"name": "breath",
-					"value": "false" 
-				},
-				{
-					"name": "wounds",
-					"value": "false" 
-				},
-				{
-					"name": "redness",
-					"value": "false" 
-				},
-				{
-					"name": "bite",
-					"value": "false" 
-				},
-				{
-					"name": "eye_irritation",
-					"value": "false" 
-				},
-				{
-					"name": "skin_disturbance",
-					"value": "false" 
-				},
-				{
-					"name": "cough",
-					"value": "false" 
-				},
-				{
-					"name": "hypertension",
-					"value": "false" 
-				},
-				{
-					"name": "metal",
-					"value": "false" 
-				},
-				{
-					"name": "convulsion",
-					"value": "false" 
-				},
-				{
-					"name": "depression",
-					"value": "false" 
 				},
 				{
 					"name": "purging",
@@ -1581,20 +1424,16 @@
 				},
 				{
 					"name": "tingling",
-					"value": "false" 
-				},
-				{
-					"name": "dilated pupil",
 					"value": "true" 
 				} 
 			],
-			"id": 760 
+			"id": 602 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "clostridium botulinum" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1607,11 +1446,11 @@
 				},
 				{
 					"name": "vomited",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "disoriented",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "weakness",
@@ -1639,7 +1478,7 @@
 				},
 				{
 					"name": "stomach",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "memory",
@@ -1651,7 +1490,7 @@
 				},
 				{
 					"name": "diarrhea",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "dizziness",
@@ -1719,20 +1558,16 @@
 				},
 				{
 					"name": "dilated pupil",
-					"value": "false" 
-				},
-				{
-					"name": "speaking",
 					"value": "true" 
 				} 
 			],
-			"id": 800 
+			"id": 639 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "eps" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1741,19 +1576,19 @@
 				},
 				{
 					"name": "nauseous",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "vomited",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "disoriented",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "weakness",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "headache",
@@ -1777,7 +1612,7 @@
 				},
 				{
 					"name": "stomach",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "memory",
@@ -1801,7 +1636,7 @@
 				},
 				{
 					"name": "breath",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "wounds",
@@ -1861,20 +1696,16 @@
 				},
 				{
 					"name": "speaking",
-					"value": "false" 
-				},
-				{
-					"name": "drooling",
 					"value": "true" 
 				} 
 			],
-			"id": 840 
+			"id": 676 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "digoxin" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -1883,15 +1714,15 @@
 				},
 				{
 					"name": "nauseous",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "vomited",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "disoriented",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "weakness",
@@ -1935,15 +1766,15 @@
 				},
 				{
 					"name": "dizziness",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "blurred_vision",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "breath",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "wounds",
@@ -2007,24 +1838,16 @@
 				},
 				{
 					"name": "drooling",
-					"value": "false" 
-				},
-				{
-					"name": "pulse",
 					"value": "true" 
-				},
-				{
-					"name": "appetite",
-					"value": "false" 
 				} 
 			],
-			"id": 880 
+			"id": 713 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "pokeberry root" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2085,11 +1908,11 @@
 				},
 				{
 					"name": "dizziness",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "blurred_vision",
-					"value": "false" 
+					"value": "true" 
 				},
 				{
 					"name": "breath",
@@ -2133,11 +1956,11 @@
 				},
 				{
 					"name": "depression",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "purging",
-					"value": "true" 
+					"value": "false" 
 				},
 				{
 					"name": "kidney_damage",
@@ -2165,16 +1988,166 @@
 				},
 				{
 					"name": "appetite",
-					"value": "true" 
+					"value": "false" 
 				} 
 			],
-			"id": 920 
+			"id": 750 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "heparin" 
+				"value": "false" 
+			},
+			"and": [
+				{
+					"name": "diagnosis",
+					"value": "true" 
+				},
+				{
+					"name": "nauseous",
+					"value": "true" 
+				},
+				{
+					"name": "vomited",
+					"value": "true" 
+				},
+				{
+					"name": "disoriented",
+					"value": "false" 
+				},
+				{
+					"name": "weakness",
+					"value": "true" 
+				},
+				{
+					"name": "headache",
+					"value": "false" 
+				},
+				{
+					"name": "sweat",
+					"value": "false" 
+				},
+				{
+					"name": "fever",
+					"value": "false" 
+				},
+				{
+					"name": "paleness",
+					"value": "false" 
+				},
+				{
+					"name": "lightheadedness",
+					"value": "false" 
+				},
+				{
+					"name": "stomach",
+					"value": "false" 
+				},
+				{
+					"name": "memory",
+					"value": "false" 
+				},
+				{
+					"name": "cold",
+					"value": "false" 
+				},
+				{
+					"name": "diarrhea",
+					"value": "false" 
+				},
+				{
+					"name": "dizziness",
+					"value": "false" 
+				},
+				{
+					"name": "blurred_vision",
+					"value": "false" 
+				},
+				{
+					"name": "breath",
+					"value": "false" 
+				},
+				{
+					"name": "wounds",
+					"value": "false" 
+				},
+				{
+					"name": "redness",
+					"value": "false" 
+				},
+				{
+					"name": "bite",
+					"value": "false" 
+				},
+				{
+					"name": "eye_irritation",
+					"value": "false" 
+				},
+				{
+					"name": "skin_disturbance",
+					"value": "false" 
+				},
+				{
+					"name": "cough",
+					"value": "false" 
+				},
+				{
+					"name": "hypertension",
+					"value": "false" 
+				},
+				{
+					"name": "metal",
+					"value": "false" 
+				},
+				{
+					"name": "convulsion",
+					"value": "false" 
+				},
+				{
+					"name": "depression",
+					"value": "true" 
+				},
+				{
+					"name": "purging",
+					"value": "true" 
+				},
+				{
+					"name": "kidney_damage",
+					"value": "false" 
+				},
+				{
+					"name": "tingling",
+					"value": "false" 
+				},
+				{
+					"name": "dilated pupil",
+					"value": "false" 
+				},
+				{
+					"name": "speaking",
+					"value": "false" 
+				},
+				{
+					"name": "drooling",
+					"value": "false" 
+				},
+				{
+					"name": "pulse",
+					"value": "true" 
+				},
+				{
+					"name": "appetite",
+					"value": "true" 
+				} 
+			],
+			"id": 787 
+		},
+		{
+			"action": {
+				"name": "poison",
+				"target": "conclusion",
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2322,13 +2295,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 960 
+			"id": 824 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "chlorine gas" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2488,13 +2461,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 1000 
+			"id": 861 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "food poison" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2642,13 +2615,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 1040 
+			"id": 898 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "iodoform" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2793,20 +2766,20 @@
 				},
 				{
 					"name": "swallow",
-					"value": "false " 
+					"value": "false" 
 				},
 				{
 					"name": "chest_pain",
 					"value": "false" 
 				} 
 			],
-			"id": 1080 
+			"id": 935 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "hydrocarbon" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -2906,13 +2879,13 @@
 					"value": "true" 
 				} 
 			],
-			"id": 1120 
+			"id": 972 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "carbon monoxide" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -3057,7 +3030,7 @@
 				},
 				{
 					"name": "swallow",
-					"value": "false " 
+					"value": "false" 
 				},
 				{
 					"name": "chest_pain",
@@ -3068,13 +3041,13 @@
 					"value": "false" 
 				} 
 			],
-			"id": 1160 
+			"id": 1009 
 		},
 		{
 			"action": {
 				"name": "poison",
 				"target": "conclusion",
-				"value": "cyanide poison" 
+				"value": "false" 
 			},
 			"and": [
 				{
@@ -3219,7 +3192,7 @@
 				},
 				{
 					"name": "swallow",
-					"value": "false " 
+					"value": "false" 
 				},
 				{
 					"name": "chest_pain",
@@ -3230,10 +3203,11 @@
 					"value": "true" 
 				} 
 			],
-			"id": 1200 
+			"id": 1046 
 		} 
 	],
 	"variable_list": [
+		" fever",
 		"anxiety",
 		"appetite",
 		"arthritis",
@@ -3247,7 +3221,6 @@
 		"chest_pain",
 		"choke",
 		"choking",
-		"cognitive",
 		"cold",
 		"constipation",
 		"convulsion",

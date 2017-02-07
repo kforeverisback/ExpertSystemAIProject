@@ -32,7 +32,8 @@
 #include <nana\system\platform.hpp>
 #include <nana\threads\pool.hpp>
 #include <nana\c++defines.hpp>
-//#include <nana\filesystem\filesystem.hpp>
+#include <nana\filesystem\filesystem.hpp>
+namespace fs = nana::experimental::filesystem;
 #undef max
 #undef min
 

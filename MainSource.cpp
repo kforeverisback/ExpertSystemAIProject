@@ -55,8 +55,9 @@ void ask(string sym)
 
 }
 
-#include "InferenceEngine.h"
-static InferenceEngine g_inferenceEngn;
+
+
+#include "GUIWindow.h"
 
 #if defined(__GNUC__)
 int main()
@@ -73,7 +74,29 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	// TODO: Place code here.
 #endif
 	start_klog();
-	g_inferenceEngn.build_KB();
-	ask("Nauseous");
+
+	auto g_global_ptr_window = Get_global_window();
+	try
+	{
+		g_global_ptr_window->show();
+		g_global_ptr_window->events().key_release([=](const nana::arg_keyboard& arg)
+		{
+			if (arg.key == L'Q' || arg.key == L'\x1b')
+			{
+				nana::API::exit();
+				g_global_ptr_window->close();
+				//nana::Wait(10);
+				g_global_ptr_window->show();
+			}
+		});
+		nana::exec();
+		g_global_ptr_window->close();
+	}
+	catch (const std::exception&)
+	{
+
+	}
+
+	//ask("Nauseous");
 	return 0;
 }
